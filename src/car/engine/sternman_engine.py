@@ -1,4 +1,4 @@
-from ..engine import Engine
+from car.engine.engine import Engine
 
 
 class SternmanEngine(Engine):

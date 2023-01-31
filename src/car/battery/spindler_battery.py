@@ -1,6 +1,6 @@
 from datetime import date, timedelta
 
-from ..battery import Battery
+from car.battery.battery import Battery
 
 
 class SpindlerBattery(Battery):
@@ -10,4 +10,4 @@ class SpindlerBattery(Battery):
         self.current_date = current_date
 
     def needs_service(self):
-        return timedelta(years=2) <= self.current_date - self.last_service_date
+        return timedelta(days=365 * 2) <= self.current_date - self.last_service_date

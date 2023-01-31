@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-from serviceable import Serviceable
+from car.utils.serviceable import Serviceable
 
 
 class Battery(Serviceable):

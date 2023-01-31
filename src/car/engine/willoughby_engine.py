@@ -1,4 +1,4 @@
-from ..engine import Engine
+from car.engine.engine import Engine
 
 
 class WilloughbyEngine(Engine):
@@ -8,4 +8,4 @@ class WilloughbyEngine(Engine):
         self.current_mileage = current_mileage
 
     def needs_service(self):
-        return self.current_mileage - self.last_service_mileage > 60000
+        return self.current_mileage - self.last_service_mileage >= 60000
